@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "productId": "aizeny",
+  "channel": "stable",
+  "architecture": "win-x64",
+  "sequence": 202609251846,
+  "version": "0.0.3",
+  "publishedUtc": "2026-09-25T18:46:46Z",
+  "expiresUtc": "2027-09-25T18:46:46Z",
+  "minimumSupportedVersion": "0.0.1",
+  "full": {
+    "assetName": "AIZeny-0.0.3-win-x64-full.zip",
+    "bytes": 193362372,
+    "sha256": "f65b18386f1e11b917ad8e9b38ac7f8a65d54f4f3e81dc81d61373559568d709"
+  },
+  "delta": null,
+  "releaseNotesUrl": "https://github.com/whats91/aizeny-updater/releases/tag/v0.0.3",
+  "keyId": "aizeny-update-2026-09"
+}
