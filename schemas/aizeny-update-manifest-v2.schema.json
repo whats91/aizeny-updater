@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/whats91/aizeny-updater/main/schemas/aizeny-update-manifest-v2.schema.json",
+  "title": "AI Zeny update manifest (schema 2)",
+  "description": "The signed stable channel file and each release-specific manifest. Signed detached with ECDSA P-256 over the exact bytes (see the .sig envelope schema below). Clients refuse unknown or missing properties.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "productId", "channel", "architecture", "sequence", "version", "publishedUtc", "expiresUtc", "minimumSupportedVersion", "full", "delta", "releaseNotesUrl", "keyId"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "productId": { "const": "aizeny" },
+    "channel": { "const": "stable" },
+    "architecture": { "const": "win-x64" },
+    "sequence": { "type": "integer", "minimum": 1, "description": "Strictly increasing; a lower sequence, or other bytes under an accepted sequence, is a replay." },
+    "version": { "$ref": "#/$defs/version" },
+    "publishedUtc": { "$ref": "#/$defs/timestamp" },
+    "expiresUtc": { "$ref": "#/$defs/timestamp" },
+    "minimumSupportedVersion": { "$ref": "#/$defs/version" },
+    "full": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assetName", "bytes", "sha256"],
+      "properties": {
+        "assetName": { "type": "string", "pattern": "^AIZeny-[0-9.]+-win-x64-full\.zip$" },
+        "bytes": { "type": "integer", "minimum": 1, "maximum": 1073741824 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "delta": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["baseVersion", "assetName", "bytes", "sha256"],
+          "properties": {
+            "baseVersion": { "$ref": "#/$defs/version" },
+            "assetName": { "type": "string", "pattern": "^AIZeny-[0-9.]+-to-[0-9.]+-win-x64-delta\.zip$" },
+            "bytes": { "type": "integer", "minimum": 1, "maximum": 1073741824 },
+            "sha256": { "$ref": "#/$defs/sha256" }
+          }
+        }
+      ]
+    },
+    "releaseNotesUrl": { "type": ["string", "null"], "format": "uri", "pattern": "^https://" },
+    "keyId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,63}$" }
+  },
+  "$defs": {
+    "version": { "type": "string", "pattern": "^(0|[1-9][0-9]{0,4})\.(0|[1-9][0-9]{0,4})\.(0|[1-9][0-9]{0,4})$" },
+    "timestamp": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$" },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "signatureEnvelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "keyId", "algorithm", "manifestSha256", "signature"],
+      "properties": {
+        "schemaVersion": { "const": 1 },
+        "keyId": { "type": "string" },
+        "algorithm": { "const": "ecdsa-p256-sha256-der" },
+        "manifestSha256": { "$ref": "#/$defs/sha256" },
+        "signature": { "type": "string", "contentEncoding": "base64" }
+      }
+    }
+  }
+}
