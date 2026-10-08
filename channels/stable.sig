@@ -2,6 +2,6 @@
   "schemaVersion": 1,
   "keyId": "aizeny-update-2026-09",
   "algorithm": "ecdsa-p256-sha256-der",
-  "manifestSha256": "83f58469c450721a6cc38fce2c5911465b2e5717a2ce9a78f4ae25feac87825c",
-  "signature": "MEUCIBdCWk/Yfhlo4YRORUNkYw5dI\u002BA\u002BjGMYJ1sFWlQLbaSvAiEAmn/BA4leYWkDznh6GwSsLXJHMvC9LVy252f78QObdzU="
+  "manifestSha256": "389d46cbe17b4b0f0f4f98439827412c60c1296aa01f125601eb0550bfd3734f",
+  "signature": "MEUCIQDrGabrwK87n4dP\u002BY00g2JT4vM8YDGR53UPuEbhRuLeVgIgWCqJ9xuVLm1K0thXfy4zt\u002BFW/4TRt5qjidWLFHOvfh0="
 }
