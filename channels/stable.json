@@ -3,22 +3,22 @@
   "productId": "aizeny",
   "channel": "stable",
   "architecture": "win-x64",
-  "sequence": 202610171629,
-  "version": "0.0.14",
-  "publishedUtc": "2026-10-17T16:30:45Z",
-  "expiresUtc": "2027-10-17T16:30:45Z",
+  "sequence": 202610180808,
+  "version": "0.0.15",
+  "publishedUtc": "2026-10-18T08:10:28Z",
+  "expiresUtc": "2027-10-18T08:10:28Z",
   "minimumSupportedVersion": "0.0.1",
   "full": {
-    "assetName": "AIZeny-0.0.14-win-x64-full.zip",
-    "bytes": 364956802,
-    "sha256": "39d5d6fe631891c8d38945b3d444f1f64e39fa6818e14bbf7c0911c6336af6e3"
+    "assetName": "AIZeny-0.0.15-win-x64-full.zip",
+    "bytes": 365069367,
+    "sha256": "816a02014c434dd12ff9cf585bda6a2efd21288923717433d77dd74fc3b4a7ef"
   },
   "delta": {
-    "baseVersion": "0.0.13",
-    "assetName": "AIZeny-0.0.13-to-0.0.14-win-x64-delta.zip",
-    "bytes": 71134832,
-    "sha256": "12ef6be6bb25b4917d7d9f0aa16b90745534cbc0a5488f736ddf345077bede5d"
+    "baseVersion": "0.0.14",
+    "assetName": "AIZeny-0.0.14-to-0.0.15-win-x64-delta.zip",
+    "bytes": 71165765,
+    "sha256": "8f7632f865fbb6bd77f9d7556be39db42ed16200a0b766dfc7f307710fa49698"
   },
-  "releaseNotesUrl": "https://github.com/whats91/aizeny-updater/releases/tag/v0.0.14",
+  "releaseNotesUrl": "https://github.com/whats91/aizeny-updater/releases/tag/v0.0.15",
   "keyId": "aizeny-update-2026-09"
 }
