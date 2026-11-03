@@ -3,17 +3,17 @@
   "productId": "aizeny",
   "channel": "stable",
   "architecture": "win-x64",
-  "sequence": 202610311758,
-  "version": "0.0.32",
-  "publishedUtc": "2026-10-31T17:59:33Z",
-  "expiresUtc": "2027-10-31T17:59:33Z",
+  "sequence": 202611021654,
+  "version": "0.0.34",
+  "publishedUtc": "2026-11-02T16:55:44Z",
+  "expiresUtc": "2027-11-02T16:55:44Z",
   "minimumSupportedVersion": "0.0.1",
   "full": {
-    "assetName": "AIZeny-0.0.32-win-x64-full.zip",
-    "bytes": 404716391,
-    "sha256": "b928188a924257a3664d31505cc20151c4fac402833c7f52a6961157f197c2f5"
+    "assetName": "AIZeny-0.0.34-win-x64-full.zip",
+    "bytes": 405093577,
+    "sha256": "6acad12bf25cf20adbfc32e3f02b89b09cf08e6eb2343a13f7807d8560955bca"
   },
   "delta": null,
-  "releaseNotesUrl": "https://github.com/whats91/aizeny-updater/releases/tag/v0.0.32",
+  "releaseNotesUrl": "https://github.com/whats91/aizeny-updater/releases/tag/v0.0.34",
   "keyId": "aizeny-update-2026-09"
 }
