@@ -3,17 +3,22 @@
   "productId": "aizeny",
   "channel": "stable",
   "architecture": "win-x64",
-  "sequence": 202611080134,
-  "version": "0.0.40",
-  "publishedUtc": "2026-11-08T01:35:31Z",
-  "expiresUtc": "2027-11-08T01:35:31Z",
+  "sequence": 202611081120,
+  "version": "0.0.41",
+  "publishedUtc": "2026-11-08T11:21:46Z",
+  "expiresUtc": "2027-11-08T11:21:46Z",
   "minimumSupportedVersion": "0.0.1",
   "full": {
-    "assetName": "AIZeny-0.0.40-win-x64-full.zip",
-    "bytes": 407399296,
-    "sha256": "addd6cc42f3dacc029be9e2857a083602b756672fee9db1a88d4fcd752e15079"
+    "assetName": "AIZeny-0.0.41-win-x64-full.zip",
+    "bytes": 407540481,
+    "sha256": "571536663fe025057ac22ad9100bd3c73645af160bc384637919d53d90c120a4"
   },
-  "delta": null,
-  "releaseNotesUrl": "https://github.com/whats91/aizeny-updater/releases/tag/v0.0.40",
+  "delta": {
+    "baseVersion": "0.0.40",
+    "assetName": "AIZeny-0.0.40-to-0.0.41-win-x64-delta.zip",
+    "bytes": 77392958,
+    "sha256": "ed5b61a1d762f0d73a61132bb6dab3f80dafcd3de57ead8dda4b0f466fffa0fd"
+  },
+  "releaseNotesUrl": "https://github.com/whats91/aizeny-updater/releases/tag/v0.0.41",
   "keyId": "aizeny-update-2026-09"
 }
